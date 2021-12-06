@@ -1,3 +1,14 @@
+//data "aws_vpc" "selected" {
+//  default = true
+//} eger manuel ekleme yerine vpc id yi otomatik olarak cekmek istersen
+
+//data "aws_subnets" "example" {
+  //filter {
+    //name = "vpc-id"
+    //values = [data.aws_vpc.selected.id]
+  //}
+//} alb olusturuken tum subnetleri eklememiz lazim. manuel olarak ekleme disinda otomatize de edebiliriz boylece
+
 data "aws_ami" "amazon-linux-2" {
   most_recent = true
   owners = ["amazon"]
